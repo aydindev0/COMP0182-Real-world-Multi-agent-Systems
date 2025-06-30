@@ -135,6 +135,53 @@ Now you can enter the following to use ROS 2 Humble:
 source ~/.bashrc
 ```
 
+## Prepare Turtlebot3 Workspace
+
+**1. Install Gazebo**
+
+```
+sudo apt install ros-humble-gazebo-*
+```
+
+**2. Install Cartographer**
+
+```
+sudo apt install ros-humble-cartographer
+sudo apt install ros-humble-cartographer-ros
+```
+
+**3. Install Navigation2**
+
+```
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+```
+
+**4. install Turtlebot3 Packages**
+
+```
+source /opt/ros/humble/setup.bash
+mkdir -p ~/turtlebot3_ws/src
+cd ~/turtlebot3_ws/src/
+git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
+sudo apt install python3-colcon-common-extensions
+cd ~/turtlebot3_ws
+colcon build --symlink-install
+echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+source ~/.bashrc
+```
+
+## Configure the environment
+
+```
+echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+source ~/.bashrc
+```
+
 ## Talker Listener Exercise
 
-In this exercise you will edit and build a ROS package. 
+In the next exercise you will edit and build a ROS package. 
