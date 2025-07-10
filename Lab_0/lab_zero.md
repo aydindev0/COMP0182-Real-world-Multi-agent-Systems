@@ -70,6 +70,11 @@ N.B. If you have a discrete graphics card you may need to undergo some extra ste
 #### Option 2: Install Ubuntu 22.04 using a virtual machine with macOS
 
 **1. Download a Virutal Machine Platform**
+There are several options for virtual machine platforms for macOS, feel free to use any other platform. In this lab sheet, we will be using VirtulBox for demonstration. First, go to the website: https://www.virtualbox.org/wiki/Downloads and download the Platform Packages for macOS hosts.
+
+
+
+
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
 
