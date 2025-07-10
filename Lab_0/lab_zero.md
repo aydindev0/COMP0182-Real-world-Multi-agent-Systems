@@ -67,6 +67,10 @@ N.B. If you have a discrete graphics card you may need to undergo some extra ste
 3. When Ubuntu boots you will need to install the recommended NVIDIA drivers.
 4. Once installed you may need to set the Nvidia card as the default graphics card for your Ubuntu system.
 
+#### Option 2: Install Ubuntu 22.04 using a virtual machine with macOS
+
+**1. Download a Virutal Machine Platform**
+
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
 
 
