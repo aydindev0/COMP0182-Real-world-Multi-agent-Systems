@@ -18,6 +18,8 @@ N.B.: In a scenario where you are using macOS and have difficulties using the vi
 #### Option 1: Install Ubuntu 22.04 Dual Boot with Windows 11 (Highly recommended)
 Adapted from https://medium.com/@supermellow.ai/first-step-to-programming-how-to-dual-boot-windows-11-and-ubuntu-22-04-2-96d0be38fc2b and https://gcore.com/learning/dual-boot-ubuntu-windows-setup
 
+
+
 **1. Prerequisites:**
 
 - A Windows 11 computer
@@ -72,8 +74,7 @@ N.B. If you have a discrete graphics card you may need to undergo some extra ste
 **1. Download a Virutal Machine Platform**
 There are several options for virtual machine platforms for macOS, feel free to use any other platform. In this lab sheet, we will be using VirtulBox for demonstration. First, go to the website: https://www.virtualbox.org/wiki/Downloads and download the Platform Packages for macOS hosts.
 
-
-
+![image.png](imgs/img1.png)
 
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
