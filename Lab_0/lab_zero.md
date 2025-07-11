@@ -87,6 +87,38 @@ Select the folder location for the VM files to be stored. Then select the Ubuntu
 
 ![image.png](imgs/img3.png)
 
+In the Hardware section, change Base Memory to 4096 MB and Processors to 2 and enable EFI.
+![image.png](imgs/img4.png)
+
+For the Hard Disk Size, allocate at least 25 GB for Ubuntu 22.04. You can adjust for more if like. Finally, press Finish.
+
+**4. Finish Installation Setup**
+After creating the Virtual Machine, select the Ubuntu System and press Start. Then Select Try or Install Ubuntu Server.
+![image.png](imgs/img5.png)
+
+In the setup, just skip everything and select `Continue` or `Done` at each step.
+![image.png](imgs/img6.png)
+
+After a few minutes, you will see `Install Complete` in the top left corner, and the system will turn to an update stage. Simply select `Rebbot Now`.
+![image.png](imgs/img7.png)
+
+**5. Install GUI**
+After reboot, you will be led to the Ubuntu Server terminal, as we need to use simulation for further work, a GUI desktop is necessary. First, type the username and password you just set to log in.
+
+![image.png](imgs/img8.png)
+
+To install the GUI, run the following command in the terminal.
+
+```bash
+sudo apt update
+sudo apt install ubuntu-desktop
+```
+
+After installing and rebooting, the Ubuntu desktop in the virtual machine has been successfully installed and is ready to use.
+
+```bash
+sudo reboot
+```
 
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
