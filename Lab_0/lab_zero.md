@@ -15,7 +15,7 @@ It is strongly recommended to dual boot Ubuntu 22.04 rather than use a virtual m
 
 N.B.: In a scenario where you are using macOS and have difficulties using the virtual machine set-up, a machine will be provided for use in the lab sessions. 
 
-#### Option 1: Install Ubuntu 22.04 Dual Boot with Windows 11 (Highly recommended)
+### Option 1: Install Ubuntu 22.04 Dual Boot with Windows 11 (Highly recommended)
 Adapted from https://medium.com/@supermellow.ai/first-step-to-programming-how-to-dual-boot-windows-11-and-ubuntu-22-04-2-96d0be38fc2b and https://gcore.com/learning/dual-boot-ubuntu-windows-setup
 
 
@@ -69,12 +69,24 @@ N.B. If you have a discrete graphics card you may need to undergo some extra ste
 3. When Ubuntu boots you will need to install the recommended NVIDIA drivers.
 4. Once installed you may need to set the Nvidia card as the default graphics card for your Ubuntu system.
 
-#### Option 2: Install Ubuntu 22.04 using a virtual machine with macOS
+### Option 2: Install Ubuntu 22.04 using a virtual machine with macOS
 
 **1. Download a Virutal Machine Platform**
 There are several options for virtual machine platforms for macOS, feel free to use any other platform. In this lab sheet, we will be using VirtulBox for demonstration. First, go to the website: https://www.virtualbox.org/wiki/Downloads and download the Platform Packages for macOS hosts.
 
 ![image.png](imgs/img1.png)
+
+**2. Download Ubuntu 22.04 image**
+Download the Ubuntu image file from the official website [here](https://cdimage.ubuntu.com/releases/jammy/release/). Select the Server install image for 64-bit ARM (ARMv8/AArch64). Normally, we prefer to download the desktop image which can give us the graphical user interface directly after installation. Unfortunately, the desktop image for Ubuntu 22.04 ARM64 is no longer available. But we can install the server image first, and install the GUI desktop manually.
+
+**3. Create New Virtual Machine for Ubuntu**
+Open VirtualBox, select New
+![image.png](imgs/img2.png)
+
+Select the folder location for the VM files to be stored. Then select the Ubuntu ISO image you downloaded. Select Skip Unattended Installation.
+
+![image.png](imgs/img3.png)
+
 
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
