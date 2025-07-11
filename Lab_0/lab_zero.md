@@ -119,7 +119,7 @@ After installing and rebooting, the Ubuntu desktop in the virtual machine has be
 ```bash
 sudo reboot
 ```
-
+![image.png](imgs/img9.png)
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
 
