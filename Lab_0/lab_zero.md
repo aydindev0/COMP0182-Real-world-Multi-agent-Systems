@@ -94,12 +94,14 @@ For the Hard Disk Size, allocate at least 25 GB for Ubuntu 22.04. You can adjust
 
 **4. Finish Installation Setup**
 After creating the Virtual Machine, select the Ubuntu System and press Start. Then Select Try or Install Ubuntu Server.
+
 ![image.png](imgs/img5.png)
 
 In the setup, just skip everything and select `Continue` or `Done` at each step.
 ![image.png](imgs/img6.png)
 
-After a few minutes, you will see `Install Complete` in the top left corner, and the system will turn to an update stage. Simply select `Rebbot Now`.
+After a few minutes, you will see `Install Complete` in the top left corner, and the system will turn to an update stage. Select `Rebbot Now`.
+
 ![image.png](imgs/img7.png)
 
 **5. Install GUI**
