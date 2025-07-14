@@ -90,7 +90,7 @@ Select the folder location for the VM files to be stored. Then select the Ubuntu
 In the Hardware section, change Base Memory to 4096 MB and Processors to 2 and enable EFI.
 ![image.png](imgs/img4.png)
 
-For the Hard Disk Size, allocate at least 25 GB for Ubuntu 22.04. You can adjust for more if like. Finally, press Finish.
+For the Hard Disk Size, allocate at least 25 GB for Ubuntu 22.04. You can adjust for more if you like. Finally, press Finish.
 
 **4. Finish Installation Setup**
 After creating the Virtual Machine, select the Ubuntu System and press Start. Then Select Try or Install Ubuntu Server.
