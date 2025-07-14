@@ -121,6 +121,28 @@ sudo reboot
 ```
 ![image.png](imgs/img9.png)
 
+
+**7. (Optional) Enable Display Scaling**
+If your Ubuntu Virtual Machine is can not be displayed in full screen resolution in your computer, you can follow these steps to install Virtual Box Guest Additions.
+
+First, in the terminal, run 
+```bash
+sudo apt update
+sudo apt install gcc perl make curl linux-headers-generic
+```
+
+Next, in your meun bar, select `Devices`, then select Insert Guest Additions CD image. 
+Then in your Files, you should a CD icon on the sidebar which says `VBox_GAs...`. Copy all the files and past them into the Documents directory.
+![image.png](imgs/img10.png)
+
+Then in the terminal, run 
+```bash
+cd Documents/
+sudo chmod 777 VBoxLinuxAdditions-arm64.run
+sudo ./VBoxLinuxAdditions-arm64.run
+```
+After restarting your VM, you should see the change in full screen display.
+
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
 
 
