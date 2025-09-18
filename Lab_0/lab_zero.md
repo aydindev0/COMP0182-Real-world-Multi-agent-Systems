@@ -126,8 +126,6 @@ sudo reboot
 ![image.png](imgs/img9.png)
 
 
-**6. (Optional) Enable Display Scaling**
-
 
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
