@@ -72,20 +72,25 @@ N.B. If you have a discrete graphics card you may need to undergo some extra ste
 ### Option 2: Install Ubuntu 22.04 using a virtual machine with macOS
 
 **1. Download a Virutal Machine Platform**
-There are several options for virtual machine platforms for macOS, feel free to use any other platform. In this lab sheet, we will be using VirtulBox for demonstration. First, go to the website: https://www.virtualbox.org/wiki/Downloads and download the Platform Packages for macOS hosts.
+There are several options for virtual machine platforms for macOS, feel free to use any other platform. In this lab sheet, we will be using VMWare Fusion for demonstration. First, go to the website: https://www.broadcom.com/. 
 
-![image.png](imgs/img1.png)
+1. In the upper-right corner, click Support Portal > Go To Portal. 
+2. Register and log in to your Broadcom account.
+3. Once logged in, click on My Downloads.
+4. Click the "Free Software Downloads available HERE" link.
+5. Click on VMware Fusion.
+6. Select the latest version of VMWare Fusion to download.
 
 **2. Download Ubuntu 22.04 image**
 Download the Ubuntu image file from the official website [here](https://cdimage.ubuntu.com/releases/jammy/release/). Select the Server install image for 64-bit ARM (ARMv8/AArch64). Normally, we prefer to download the desktop image which can give us the graphical user interface directly after installation. Unfortunately, the desktop image for Ubuntu 22.04 ARM64 is no longer available. But we can install the server image first, and install the GUI desktop manually.
 
 **3. Create New Virtual Machine for Ubuntu**
-Open VirtualBox, select New
+Open VMWare Fusion, on the top-left corner, select New: 
+![image.png](imgs/img1.png)
+
+Drag the .iso file you just downloaded here. Follow the instructions, you don't need to change any settings.
+
 ![image.png](imgs/img2.png)
-
-Select the folder location for the VM files to be stored. Then select the Ubuntu ISO image you downloaded. Select Skip Unattended Installation.
-
-![image.png](imgs/img3.png)
 
 In the Hardware section, change Base Memory to 4096 MB and Processors to 2 and enable EFI.
 ![image.png](imgs/img4.png)
