@@ -125,8 +125,14 @@ sudo reboot
 ```
 ![image.png](imgs/img9.png)
 
+**6. (Optional) Select the disk startup of your virtual machine**
+Go to the settings menu of the virtual machine, and check the boot order in the startup tab.
+
+Select the Hard Disk to start up the virtual machine.
+Then do `sudo reboot` to see if it works.
 
 
+![image.png](imgs/img10.png)
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
 
