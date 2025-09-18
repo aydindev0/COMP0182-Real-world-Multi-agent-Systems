@@ -88,7 +88,7 @@ Download the Ubuntu image file from the official website [here](https://cdimage.
 Open VMWare Fusion, on the top-left corner, select New: 
 ![image.png](imgs/img1.png)
 
-Drag the .iso file you just downloaded here. Follow the instructions, you don't need to change any settings.
+Drag the .iso file you just downloaded here. Follow the instructions, it is recommended that you chose at least 50 GB for Hard Disk size.
 
 ![image.png](imgs/img2.png)
 
