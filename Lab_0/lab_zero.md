@@ -92,10 +92,7 @@ Drag the .iso file you just downloaded here. Follow the instructions, you don't 
 
 ![image.png](imgs/img2.png)
 
-In the Hardware section, change Base Memory to 4096 MB and Processors to 2 and enable EFI.
 ![image.png](imgs/img4.png)
-
-For the Hard Disk Size, allocate at least 25 GB for Ubuntu 22.04. You can adjust for more if you like. Finally, press Finish.
 
 **4. Finish Installation Setup**
 After creating the Virtual Machine, select the Ubuntu System and press Start. Then Select Try or Install Ubuntu Server.
@@ -129,26 +126,9 @@ sudo reboot
 ![image.png](imgs/img9.png)
 
 
-**7. (Optional) Enable Display Scaling**
-If your Ubuntu Virtual Machine is can not be displayed in full screen resolution in your computer, you can follow these steps to install Virtual Box Guest Additions.
+**6. (Optional) Enable Display Scaling**
 
-First, in the terminal, run 
-```bash
-sudo apt update
-sudo apt install gcc perl make curl linux-headers-generic
-```
 
-Next, in your meun bar, select `Devices`, then select Insert Guest Additions CD image. 
-Then in your Files, you should a CD icon on the sidebar which says `VBox_GAs...`. Copy all the files and past them into the Documents directory.
-![image.png](imgs/img10.png)
-
-Then in the terminal, run 
-```bash
-cd Documents/
-sudo chmod 777 VBoxLinuxAdditions-arm64.run
-sudo ./VBoxLinuxAdditions-arm64.run
-```
-After restarting your VM, you should see the change in full screen display.
 
 These are the general steps, though please research your specific use-case depending on the graphics card in your computer. Guidance will be available in the labs.
 
