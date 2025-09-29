@@ -87,7 +87,7 @@ By using ```cos(theta)``` combined with a linear gain ```k1``` and a angular gai
 In the ```single_robot_navigation.py``` script you have cloned, experiment with the following sets of k1 and k2 gains.
 
 | k1 | k2 | 
-|----------|
+|-----|-----|
 | 40  | 10 |
 | 20  | 5  | 
 | 10  | 2  | 
