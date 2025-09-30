@@ -38,9 +38,9 @@ After running the simulation you will see that two files are generated: ```outpu
 
 This function drives the simulation robot using the sequence of waypoints computed in the previous step. It accepts five arguments, the first being the agent. The next four are used to drive the robot from each point in the schedule towards the goal and schedule2 towards goal2.
 
-'''
+```
 def navigation(agent, goal, schedule, goal2, schedule2):
-'''
+```
 
 While the agent is not at the goal position, the loop reads the robot position and computes the heading to the waypoint (```goal_direction```) and the robot's current heading (```Orientation```). Then the heading error ```theta = goal_direction - Orientation``` is calculated and then normalised to the range [-π,π] to avoid unnecessary rotation.
 
