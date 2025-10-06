@@ -1,4 +1,4 @@
-# COMP0182 Real-world Multi-agent Systems: Lab Sheet One
+# COMP0182 Real-world Multi-agent Systems: Lab Sheet Two
 
 In this exercise you will edit and build a ROS package. It is adapted from the ROS 2 Humble tutorials.
 
