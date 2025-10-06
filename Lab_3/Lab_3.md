@@ -1,4 +1,4 @@
-# COMP0182 Real-world Multi-agent Systems: Lab 2
+# COMP0182 Real-world Multi-agent Systems: Lab Sheet Three
 
 In todays lab session we will be using [PyBullet](https://pybullet.org/wordpress/) to simulate a single agent navigating to a goal position and back. At the goal position, the agent will fetch an item which it will deliver to the start position. 
 
