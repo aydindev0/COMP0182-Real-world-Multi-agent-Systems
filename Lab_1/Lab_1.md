@@ -1,4 +1,4 @@
-# COMP0182 Real-world Multi-agent Systems: Lab Sheet Zero
+# COMP0182 Real-world Multi-agent Systems: Lab Sheet One
 
 It is recommended to complete this lab sheet before attending the first lab session. It is possible that there will be installation quirks that require some time to resolve.
 
