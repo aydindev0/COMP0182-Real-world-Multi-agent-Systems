@@ -2,8 +2,9 @@
 
 In this exercise you will edit and build a ROS package. It is adapted from the ROS 2 Humble tutorials.
 
+## Talker and listener exercise
 
-## Configure environment
+### Configure environment
 
 In this section you will configure the ROS workspace on the Turtlebot. 
 
@@ -20,7 +21,7 @@ export ROS_DOMAIN_ID=<your_group_number>
 echo "export ROS_DOMAIN_ID=<your_group_number>" >> ~/.bashrc
 ```
 
-## Understand the workspace
+### Understand the workspace
 
 A workspace is a directory containing ROS 2 packages. Remember to source your ROS 2 installation in every terminal you plan to work in. This step will be omitted going forward.
 
@@ -32,7 +33,7 @@ This is the src directory within your Turltebot's ROS 2 workspace. Packages live
 cd ~/turtlebot3_ws/src
 ```
 
-## Create a package
+### Create a package
 
 Within your workspace you will now create a package.
 
@@ -97,7 +98,7 @@ entry_points={
 },
 ```
 
-## Build and run 
+### Build and run 
 
 From the root of your ros workspace enter the following to ensure the dependencies are installed:
 
@@ -117,7 +118,7 @@ Open a new terminal and source the installation
 source install/setup.bash
 ```
 
-## Talk over the local network
+### Talk over the local network
 
 You will be given an IP address to complete the following in the lab. When provided, enter this inter your terminal:
 
@@ -132,5 +133,53 @@ You should receive a response in your terminal, once your message is delivered.
 Feel free to explore the ROS 2 Humble tutorials here https://docs.ros.org/en/humble/Tutorials.html
 
 
+
+## Unit tests
+
+**1. Open a new terminal**
+
+Open a new terminal on your laptop and connect to the Raspberry Pi of your Turtlebot via SSH using its IP address.
+
+If you do not know the IP address of the Rasperry Pi, you will need to connect a monitor and keyboard and type ```ip a``` in the terminal while connected to the MSc_IoT network via Wi-Fi. The IP address will be listed next to ```inet```. If you changed the username on the Raspberry Pi, use that in place of ```ubuntu``` below:
+
+```
+ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+```
+
+Now specify the model of the Turtlebot3 (burger) and launch the bringup in the same terminal:
+
+```
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_bringup robot.launch.py
+```
+
+**2. Operate your Turtlebot**
+
+Open a new terminal and run the following on your laptop:
+
+```
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
+You will be able to move the Turtlebot using your keyboard. Instructions will be displayed in the terminal window.
+
+**3. Note the position, orientation and velocity**
+
+To retrieve more data, you can use the topic monitor while using teleoperation to move the robot. In your terminal on the remote PC, run:
+
+```
+rqt
+```
+
+You will see a list of topics you can subscribe to. If you cannot see the topics, click on ```plugins > Topics > Topic monitor```. Select each topic to see what data is collected, and find the topic(s) that allow you to retreieve the position, orientation and velocity of the Turtlebot. 
+
+Once you have found the topic of interest, you can run:
+
+```
+ros2 topic echo {topic_name}
+```
+
+
 This lab was adapted from 
 Adapted from https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html and https://husarion.com/tutorials/ros2-tutorials/6-robot-network/
+and https://emanual.robotis.com/docs/en/platform/turtlebot3/basic_operation/#basic-operation
