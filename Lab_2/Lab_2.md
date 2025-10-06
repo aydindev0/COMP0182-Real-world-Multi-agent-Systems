@@ -74,6 +74,13 @@ Once you have found the topic of interest, you can run:
 ros2 topic echo {topic_name}
 ```
 
+To get only the position and orientation data, you can use the ```--field``` option that filters nested fields.
+
+For position and orientation data:
+```
+ros topic echo {topic_name} --field {data fields}
+```
+
 
 This lab was adapted from 
 Adapted from https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html and https://husarion.com/tutorials/ros2-tutorials/6-robot-network/
