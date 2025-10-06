@@ -60,7 +60,7 @@ You will be able to move the Turtlebot using your keyboard. Instructions will be
 
 **3. Note the position, orientation and velocity**
 
-To retrieve more data, you can use the topic monitor while using teleoperation to move the robot. In your terminal on the remote PC, run:
+To retrieve more data, you can use the topic monitor while using teleoperation to move the robot. Open a new terminal on the remote PC, run:
 
 ```
 rqt
@@ -74,6 +74,8 @@ Once you have found the topic of interest, you can run:
 ros2 topic echo {topic_name}
 ```
 
+But running this will print out the full topic message, which includes a lot of nested fields like covariance matrices, twist, etc., which are unnecessary for this exercise.
+
 To get only the position and orientation data, you can use the ```--field``` option that filters nested fields.
 
 For position and orientation data:
@@ -81,6 +83,7 @@ For position and orientation data:
 ros topic echo {topic_name} --field {data fields}
 ```
 
+Now use the keyboard teleoperation from earlier to navigate the TurtleBot. Then, observe the change in the position and orientation fields. 
 
 This lab was adapted from 
 Adapted from https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html and https://husarion.com/tutorials/ros2-tutorials/6-robot-network/
