@@ -4,6 +4,8 @@ In todays lab session we will be using [PyBullet](https://pybullet.org/wordpress
 
 To find the path from the start position to the goal position the A* algorithm is used. To run the simulation, you will use the following repository.
 
+## Task 1: Pybullet Simulation
+
 **1. Clone the following directory**
 
 ```
@@ -82,7 +84,7 @@ By using ```cos(theta)``` combined with a linear gain ```k1``` and a angular gai
 
 ```
 
-## Exercise 
+### Exercise 
 
 In the ```single_robot_navigation.py``` script you have cloned, experiment with the following sets of k1 and k2 gains.
 
@@ -95,6 +97,47 @@ In the ```single_robot_navigation.py``` script you have cloned, experiment with 
 
 Observe the effect from changing these values in the simulation, and plot the trajectory using the ```matplotlib``` library. Compare the actual path to the desired path provided by the waypoints in the ```output.yaml``` files by plotting them in the same figure.
 
+## Task 2: SLAM/Map using LiDAR sensor
+
+**SLAM (Simultaneous Localization and Mapping)** is a process that allows a robot, like the TurtleBot, to build a map of an unknown environment while keeping track of its own position within that map at the same time. 
+
+Using sensors such as a LiDAR and wheel odometry, the TurtleBot3 scans its surroundings and creates a 2D map. This map can later be used for navigation, allowing the robot to move to specific locations without bumping into obstacles.
+
+### Run SLAM code
+
+First, SSH to your TurtleBot:
+
+```
+ssh ubuntu@{IP_ADDRESS_OF_TURTLEBOT3}
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_bringup robot.launch.py
+```
+
+Next, open a new terminal from the remote PC and launch the SLAM node.
+
+```
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_cartographer cartographer.launch.py
+```
+
+Once the SLAM node is successfully up and running, we will use the teleoperation to explore unknown area of the map. 
+Open a new terminal and run the teleoperation node:
+
+```
+export TURTLEBOT3_MODEL=burger
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
+Start moving the Turtlebot to explore the environment and draw the map.
+
+
+After creating the complete map of the environment, you can save the map data for later use (e.g. obstacle avoidance during automated navigation).
+
+```
+ros2 run nav2_map_server map_saver_cli -f ~/map
+```
+
+This will create a map.yaml file in the directory where the map_saver_cli node is launched at.
 
 ## References
 
