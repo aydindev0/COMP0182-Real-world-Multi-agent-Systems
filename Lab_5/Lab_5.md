@@ -93,10 +93,10 @@ This will create two files: `~/map.pgm` (the map image) and `~/map.yaml` (the ma
 
 ### 2.1 What is SLAM Actually Doing?
 
-**Code Exploration**: Examine the Cartographer launch file to understand the configuration:
+**Code Exploration**: Examine the Cartographer launch file to understand the configuration. You will have to find the correct directory for the package in your turltebot3_ws 
 
 ```bash
-roscd turtlebot3_cartographer
+cd turtlebot3_cartographer
 cat launch/cartographer.launch.py
 ```
 
