@@ -1,4 +1,0 @@
-# Example room configuration for YOLO package
-rooms:
-  - name: lab
-    camera: /dev/video0

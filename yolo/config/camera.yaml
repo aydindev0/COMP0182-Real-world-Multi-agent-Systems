@@ -1,4 +1,0 @@
-# Camera configuration for YOLO package
-camera_device: /dev/video0
-preset_logitech: false
-zoom: 200
