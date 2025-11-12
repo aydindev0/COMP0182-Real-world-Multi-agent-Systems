@@ -90,7 +90,7 @@ Key behaviour:
 - Toggle `--preset-logitech` vs `--disable-autofocus` to see how focus/exposure affect detection confidence.
 - Adjust `--conf` between 0.10 and 0.40 to balance false positives vs. missed detections.
 - Add or remove class IDs, e.g., `--class-ids 0 1` for person + bicycle.
-- Consult the official COCO class index (e.g. https://cocodataset.org/#explore) to discover new object IDs to monitor and test how YOLO responds.
+- Consult the official COCO class index (e.g. https://cocodataset.org/#explore) or the Ultralytics YOLO Docs (https://docs.ultralytics.com/datasets/detect/coco/) to discover new object IDs to monitor and test how YOLO responds.
 - Save snapshots with `--save-dir ~/yolo_snaps` and zip them for your lab report.
 
 ---
