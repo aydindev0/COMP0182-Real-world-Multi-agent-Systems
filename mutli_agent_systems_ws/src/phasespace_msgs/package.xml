@@ -1,0 +1,22 @@
+<package format="3">
+  <name>phasespace_msgs_2</name>
+  <version>0.0.0</version>
+  <description>The phasespace_msgs package</description>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <maintainer email="jianwei.liu.21@ucl.ac.uk">Valerio Modugno</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+  </export>
+</package>
+
