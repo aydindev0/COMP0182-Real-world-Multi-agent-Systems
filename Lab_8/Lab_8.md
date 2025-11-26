@@ -7,6 +7,9 @@ Before begin this lab, we need to downgrade our ubuntu system to 20.04. For conv
 Adapted from:
 https://www.youtube.com/watch?v=-iSAyiicyQY&t=562s&ab_channel=KskRoyal
 
+**0. Optional**:
+If you want to or you don't have enough disk space, you can delete the previous Ubuntu 22.04 from your disk management, then select the partition for Ubuntu 22.04 and press delete volume. 
+
 **1. Pre-requisites**:
 - A Windows 11 or higher computer
 - At least 25 GB of free disk space for Ubuntu 20.04
