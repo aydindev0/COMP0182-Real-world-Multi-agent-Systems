@@ -82,3 +82,71 @@ After restarting your computer, the Ubuntu dual boot menu will be shown.
 
 Reference:
 https://www.freecodecamp.org/news/how-to-dual-boot-windows-10-and-ubuntu-linux-dual-booting-tutorial/
+
+## Task 2: Installation of ROS Noetic
+
+For this course, everyone **must** use ROS Noetic. 
+
+Adapted from:
+https://wiki.ros.org/noetic/Installation/Ubuntu
+
+Open the ***Terminal*** by clicking it in the application menu or shortcut **Ctrl + Alt + T**, then paste the following commands:
+
+**1. Set up your source.list**
+
+```bash
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```
+
+It will ask for your password, but it will **not** be shown on your screen, just type it and enter. As long as there is nothing shown (such as an error message), it means the command has been run correctly
+
+
+**2. Set up your keys**
+
+```bash
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+```
+
+**3. Installation**
+
+```bash
+sudo apt update
+```
+
+It is recommended to install the Desktop-Full version:
+
+```bash
+sudo apt install ros-noetic-desktop-full
+```
+
+Once it's done, the ROS Noetic has been successfully installed
+
+**4. Environment setup**
+
+Every time you want to use ROS from the terminal, you have to source this first:
+
+```bash
+source /opt/ros/noetic/setup.bash
+```
+
+This is necessary for **every** new terminal tab you open.
+
+It will be convenient to automatically source the script by adding it to `~/.bashrc` :
+
+```bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+**5. Installing essential dependencies**
+
+```jsx
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+```
+
+**6. After all, enter `roscore` to see if the ROS runs successfully**
+
+**Reference**:
+https://medium.com/@createwithabd/ros-noetic-installation-guide-on-ubuntu-20-04-388568d24bcf
+
