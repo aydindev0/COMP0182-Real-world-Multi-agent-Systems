@@ -141,12 +141,22 @@ source ~/.bashrc
 
 **5. Installing essential dependencies**
 
-```jsx
+```bash
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 
+**6. Install the Turtlebot3 essential dependencies**
+
+```bash
+sudo apt install ros-noetic-dynamixel-sdk
+sudo apt install ros-noetic-turtlebot3-msgs
+sudo apt install ros-noetic-turtlebot3
+```
+
 **6. After all, enter `roscore` to see if the ROS runs successfully**
+### NB: If you require further dependencies please visit the robotis quick start guide below. (Noetic)
 
 **Reference**:
 https://medium.com/@createwithabd/ros-noetic-installation-guide-on-ubuntu-20-04-388568d24bcf
+https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup    (Ensure you are on the Noetic tab)
 
