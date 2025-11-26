@@ -1,5 +1,10 @@
 # Multi-Robot ArUco-Based Navigation
 
+## NB: Please refer to this script for single agent navigation 
+
+https://github.com/narsimlukemsaram/COMP0182-Multi-Agent-Systems/blob/main/Week_08/goal_pose_solution.py
+
+
 ## Prerequisites
 
 ### Hardware
