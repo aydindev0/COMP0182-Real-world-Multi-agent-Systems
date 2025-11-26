@@ -154,7 +154,7 @@ rosrun auto_navigation multi_goal_navigation.py
 
 You can use the script with these parameters:
 ```bash
-rosrun auto_navigation multi_agent_navigation.py \
+rosrun auto_navigation multi_agent_navigation1.py \
   _waypoint_file:=./waypoints.yaml \
   _robot_names:="['tb3_0', 'tb3_1']" \
   _aruco_ids:="['id505', 'id101']"
