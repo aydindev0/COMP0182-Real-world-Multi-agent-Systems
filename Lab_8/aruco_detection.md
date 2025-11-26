@@ -105,8 +105,21 @@ sudo apt install ros-noetic-aruco-ros
 
 Before launching the files, you need to set up your catkin workspace properly:
 
+Download this package. You may find it simpler to clone the entire repository and move the directory once it is on your local machine.
+
+https://github.com/narsimlukemsaram/COMP0182-Multi-Agent-Systems/tree/main/turtlebot3_burger_auto_navigation/
+
+Create your workspace and add a src directory in which packages are to be placed. 
+
+```bash
+mkdir catkin_ws
+cd catkin_ws
+mkdir src
+```
+
 1. Move the package into `catkin_ws/src`
-2. Build the workspace:
+2. Build the workspace. Make sure you are not in the /src directory.
+
 ```bash
 cd ~/catkin_ws
 catkin_make
@@ -115,11 +128,7 @@ catkin_make
 ```bash
 source devel/setup.bash
 ```
-
-**Launch Files**:
-
-In GitHub: 
-https://github.com/narsimlukemsaram/COMP0182-Multi-Agent-Systems/tree/main/Week_03/turtlebot3_burger_auto_navigation/auto_aruco_marker_finder/launch, there are three launch files,
+**Understanding the launch files**
 
 1. ``usb_cam_stream_publisher.launch``: USB image publisher
    
@@ -135,16 +144,13 @@ Open the first terminal, and run this command to execute the ROS master:
 roscore
 ```
 
-Let this terminal open to run the master always. Please do not close and terminate this terminal. 
+Leave this terminal open at all times. If rosmaster is not active then you will not successfully launch any other packages including the turltebot3 bringup. 
 
 **Build or compile your workspace**:
 
 Open the second terminal, and run this command to compile your workspace:
 
-```bash
-cd catkin_ws
-```
-
+**Launch Files**:
 ```bash
 catkin_ws 
 catkin_make
@@ -211,27 +217,9 @@ Open the sixth terminal, and run this command to see the pose of the marker:
 ```bash
 rostopic echo /aruco_single/pose
 ```
+The rqt_gui window will allow you to visualise the arena so that you can ensure the aruco markers are in view.
 
-Now, take the camera and keep on the ArUco Marker Id = 701 image, you can see the results in rqt_gui window (from the fifth terminal) and the sixth terminal.
-
-Try to run multiple ArUco Markers finder code from the GitHub: 
-[multi_aruco_marker](turtlebot3_burger_auto_navigation/auto_aruco_marker_finder/launch/multiple_aruco_marker_finder.launch)
-
-**Reference**:
-
-GitHub: [Week_03/turtlebot3_burger_auto_navigation/auto_aruco_marker_finder/launch](https://github.com/narsimlukemsaram/COMP0182-Multi-Agent-Systems/tree/main/Week_03/turtlebot3_burger_auto_navigation/auto_aruco_marker_finder/launch)
-
-## Task 3 (Optional): Find the ArUco Marker and navigate towards it. 
-After managing to recognize 2 or more aruco marker at the same time, you can try using this feature to navigate your turtlebot. Check the code in [goal_pose](turtlebot3_burger_auto_navigation/auto_navigation/scripts/goal_pose.py) and try to use it for this task.
-
-Hint: one aruco marker as the coordinate of your turtlebot, and another one as the target.
-
-## Task 4 (Optional): Naïve obstacle avoidance using LiDAR
-
-Follow the tutorial in [4. SLAM](https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/#run-slam-node) and [5. Navigation](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#navigation)
- from the turtlebot offcial document
-
-**Desired Output**: Build your own map using ```map_saver``` and use this map to achieve navigation with obstacle avoidance
+Move on to the next lab to explore single and multi agent navigation. 
 
 Reference:
 https://github.com/narsimlukemsaram/COMP0182-Multi-Agent-Systems
