@@ -1,9 +1,12 @@
 # COMP0182 (Multi-Agent Systems): Lab Sheet 3
 
+##NB: You can find goal_pose.py in: COMP0182-Multi-Agent-Systems/turtlebot3_burger_auto_navigation/auto_navigation/scripts
+
+https://github.com/narsimlukemsaram/COMP0182-Multi-Agent-Systems/
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Task 1 (Mandatory): Install and connect the Remote PC (your Laptop) and Target Robot (TurtleBot3 Burger)
-Follow **Chatper 3: Quick Start Guide** from official tutorial from
+Follow **Chapter 3: Quick Start Guide** from official tutorial from
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup
 
 **Important**: Make sure you select the correct version of ROS: **Noetic**
